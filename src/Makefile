@@ -69,6 +69,7 @@ SRCS   = closure.c \
 
 yacc: $(OBJ)
 	$(CC) -o yacc $(OBJ)
+	cp yacc ..
 	@echo "done"
 
 clean:
