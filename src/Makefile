@@ -9,7 +9,7 @@ CFLAGS  = -O
 LDFLAGS = -static
 TAR     = tar
 GZIP    = gzip
-VERS    = byaccj1.15
+VERS    = byaccj1.15-p2
 JAVA    = java
 ZIP     = zip
 
@@ -27,13 +27,6 @@ OBJ 	= closure.o \
 	symtab.o \
 	verbose.o \
 	warshall.o
-
-irix: yacc
-	mv yacc yacc.irix
-linux: yacc
-	mv yacc yacc.linux
-solaris: yacc
-	mv yacc yacc.solaris
 
 all: yacc
 
